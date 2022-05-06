@@ -1,5 +1,6 @@
 ## How Computers understand Informations 
 The machine language is binary. Computers can only speak and understand ***0*** and ***1***. Any informations given to a computer, wheter it's a number, a text, an image, a video, a sound, an emoji or something else, has to be first translated into binary in order to be understood by the computer.
+
 ### How Computers understand Numbers
 As computers only speak binary, to understand a number, this number has to be first converted into binary. Which is a set of ***1*** and ***0****.
 
@@ -11,7 +12,7 @@ In a set of ***1*** and ***0****, each ***1*** or ***0*** is called a digit (pre
 - To convert the number ***128*** into binary, we need ***8 bits*** : ``128 -> 1 0 0 0 0 0 0 0`` *(A set of one **1** and seven **0**)*
 
 ### How Computers understands Text
-As you know now, a computer can only understand binary digit. Only set of ***0*** and ***1***. That means any letter given to a computer has to be converted into binary first, so the computer can understand it.
+As you know now, a computer can only understand binary digits. Only set of ***0*** and ***1***. That means any letter given to a computer has to be converted into binary first, so the computer can understand it.
 
 Here is the process of how a letter is converted into binary :
 1. A letter is given to a computer `The letter "A", for example`
@@ -38,26 +39,25 @@ For capital letters, i.e from ***a*** to ***z***, the numerical representation g
 The ASCII standard has also the numbers that represent all the ponctuations. You can look at the entire ASCII Table [here](https://theasciicode.com.ar/). Unfortunately, this standard doesn't include numbers that represents special characters of orther languages, like the special character `é` in French.
 
 ### So how we represent those orther special characters
-For this, we use another standard. This one is called ***Unicode***. It includes all the ASCII numbers, and in addition numbers for the orther special characters. You can have a look at the ***Latin Unicode*** Table [here](https://www.ssec.wisc.edu/~tomw/java/unicode.html#x0080).
+For this, we use another standard. This one is called ***Unicode***. It includes all the ASCII numbers, and in addition the numbers that represent the orther special characters. You can have a look at the ***Latin Unicode*** Table [here](https://www.ssec.wisc.edu/~tomw/java/unicode.html#x0080).
 
-## Representing Images, Videos and Sound
-### Colors
-Colors are commonly represented by a system called `RGB`. This system is a mix a three primary colors (Red, Green, Blue):
+## How Computers understand Colors
+Colors are commonly represented by a system called `RGB`. This system is a mix of three primary colors ***(Red, Green, Blue)***. In `RGB`, we have :
 - `R` for `Red`
 - `G` for `Green`
 - `B` for `Blue`
 
-To define a specific color by using the RGB system, we have to set a number from 0 to 255 that represent the amount of each of red, green, and blue.
+To define a specific color by using the RGB system, we have to set an amount of red, an amount of green, and an amount of blue. The number that represent the amount of each color goes from ***0*** to ***255***.
 
-For example, to represent the color green yellow, we have to write this RGB code `(173, 255, 47)`. This means that in Yellow, we have 173 amount of Red, 255 amount Green, and 47 amount of blue.
+For example, to represent the color `green yellow`, we have to write this RGB code:  `(173, 255, 47)`. This means that in `green yellow`, we have ***173 amount of Red, 255 amount Green, and 47 amount of blue***.
 
-Because computers can only understand binary, when we give the computer this formula `(173, 255, 47)`, each number is converted into binary.
+Because computers can only understand binary, when we give to a computer this formula `(173, 255, 47)`, each number is converted into a *8 digits* binary.
 - `173` for the amount of Red becomes `10101101`
-- `255` for the amount of Red becomes `11111111`
+- `255` for the amount of Green becomes `11111111`
 - `47` for the amount of Blue becomes `00101111`
-Then after converting each numbers, they all mixed together. So :
+Then after converting each numbers, they are all mixed together. So :
 - `(173, 255, 47)` becomes `101011011111111100101111`
 This is the process how computers understand colors.
 
-#### But how a computer knows that this binary code is the Letter A and not the number 65 ?
-///// Write that part (That depends on the context. In a context of a text file, he knows that is an A, in context of a google sheets he knows that's 65, etc.... make more researches)
+## In a nutshell
+- Computers can only understand binary. Anything you put in a computer, wheter it's a number, a text, a picture, a color, etc. It is converted into a bunch of ***0*** and ***1***. In other words, into binary.
