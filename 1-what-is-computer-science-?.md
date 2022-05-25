@@ -12,7 +12,7 @@ An algorithm generally produces a result. In Computer Science Jargon, The result
 
 ## In a nutshell
 - Computer is more likely the art of *Solving Problems*
-- As computer scientists, you'll always have to deal with:
+- As a computer scientist, you'll always have to deal with:
 1. Inputs
-2. Process that inputs through Algorithms
-3. These algorithms will produce outputs, based on the inputs
+2. Process inputs through Algorithms
+3. Algorithms will produce outputs, based on their inputs
